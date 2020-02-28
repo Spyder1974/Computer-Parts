@@ -1,0 +1,48 @@
+﻿    <!-- Dylan Broad
+    2/19/2020
+    Computer Parts Assignment -->
+<Window x:Class="computerparts.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:computerparts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="Aqua">
+    <ScrollViewer>
+        <StackPanel>
+            <CheckBox x:Name="lblComputer" FontSize="20" Checked="lblComputer_Checked_1" Unchecked="LblComputer_Unchecked">Computer Parts</CheckBox>
+            <CheckBox x:Name="lblCPU" Unchecked="lblCPU_Unchecked" Checked="lblCPU_Checked_1" Visibility="Collapsed" >CPU</CheckBox>
+            <Label x:Name="lblInfoCPU" Visibility="Collapsed">https://www.canadacomputers.com/product_info.php?cPath=4_65&amp;item_id=132428 200$ free shipping</Label>
+            <CheckBox x:Name="lblmotherboard" Visibility="Collapsed" Checked="lblmotherboard_Checked" Unchecked="lblmotherboard_Unchecked">motherboard info</CheckBox>
+            <Label x:Name="lblmotherboardinfo" Visibility="Collapsed">micro atx motherboard https://www.newegg.ca/p/N82E16813145169 112.18
+            </Label>
+            <CheckBox x:Name="lblram" Unchecked="lblram_Unchecked" Checked="lblram_Checked" Visibility="Collapsed">Ram</CheckBox>
+            <Label x:Name="lblraminfo" Visibility="Collapsed">16 gb 3000mhz https://www.newegg.ca/team-16gb-288-pin-ddr4-sdram/p/N82E16820331360?Description=16gb%20ram&amp;cm_re=16gb_ram-_-20-331-360-_-Product 96.99</Label>
+            <CheckBox x:Name="lblSSD" Unchecked="lblSSD_Unchecked" Checked="lblSSD_Checked" Visibility="Collapsed">SSD</CheckBox>
+            <Label x:Name="lblSSDinfo" Visibility="Collapsed">240gb ssd for fast boot times https://www.newegg.ca/kingston-a400-240gb/p/N82E16820242400?Item=N82E16820242400 47.99
+            </Label>
+            <CheckBox x:Name="lblHardDrive" Unchecked="lblHardDrive_Unchecked" Checked="lblHardDrive_Checked" Visibility="Collapsed">HardDrive</CheckBox>
+            <Label x:Name="lblHardDriveInfo" Visibility="Collapsed">Hard drive with 2tb lots of storage https://www.newegg.ca/seagate-barracuda-st2000dm008-2tb/p/N82E16822184773 69.99</Label>
+            <CheckBox x:Name="lblCase" Visibility="Collapsed" Unchecked="lblCase_Unchecked" Checked="lblCase_Checked">PC Case</CheckBox>
+            <Label x:Name="lblCaseInfo" Visibility="Collapsed">Case: https://www.canadacomputers.com/product_info.php?cPath=6_112&amp;item_id=081350 54.99</Label>
+            <CheckBox x:Name="lblpowersupply" Visibility="Collapsed" Unchecked="lblpowersupply_Unchecked" Checked="lblpowersupply_Checked">Power Supply</CheckBox>
+            <Label x:Name="lblpowersupplyinfo" Visibility="Collapsed">https://www.newegg.ca/hanmi-micronics-caslon-ii-series-c2sp-600-600w/p/1HU-00U6-00011 57.99
+            </Label>
+            <CheckBox x:Name="lblGPU" Visibility="Collapsed" Unchecked="lblGPU_Unchecked" Checked="lblGPU_Checked">GPU</CheckBox>
+            <Label x:Name="lblGPUinfo" Visibility="Collapsed">graphics card https://www.newegg.ca/asrock-radeon-rx-580-rx580-8g-oc/p/N82E16814930002?Item=N82E16814930002 229.99
+            </Label>
+            <CheckBox x:Name="lblopticaldrive" Visibility="Collapsed" Checked="lblopticaldrive_Checked" Unchecked="lblopticaldrive_Unchecked">Optical Drive</CheckBox>
+            <Label x:Name="lblopticaldriveinfo" Visibility="Collapsed">optical drive
+https://www.newegg.ca/asus-model-drw-24f1st-d-blk-b-as-dvd-burner/p/N82E16827135305?Description=optical%20drive&amp;cm_re=optical_drive-_-27-135-305-_-Product 22.99
+            </Label>
+            <Label x:Name="lblFinalPriceinfo" Visibility="Collapsed">subtotal: 931.73$
+            </Label>
+            <CheckBox x:Name="lblfinalprice" Visibility="Collapsed" Checked="lblfinalprice_Checked" Unchecked="lblfinalprice_Unchecked">Cost: 
+             </CheckBox>
+            <Button x:Name="lblCalculateFinalPrice" Visibility="Collapsed" Click="lblCalculateFinalPrice_Click" Content="Total"></Button>
+            <Label x:Name="lblCFPinfo" Visibility="Collapsed"></Label>
+        </StackPanel>
+        
+    </ScrollViewer>
+</Window>
